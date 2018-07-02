@@ -1,9 +1,9 @@
-package strategy.juego;
+package strategy.juego.color;
 
 public class Blanco extends Color {
 
     @Override
-    String get() {
+    public String get() {
         return "blanco";
     }
 }

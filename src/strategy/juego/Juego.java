@@ -1,5 +1,14 @@
 package strategy.juego;
 
+import strategy.juego.arma.Hacha;
+import strategy.juego.color.Blanco;
+import strategy.juego.personaje.Elfo;
+import strategy.juego.personaje.Enano;
+import strategy.juego.personaje.Orco;
+import strategy.juego.personaje.Personaje;
+import strategy.juego.ropa.Ropa;
+import strategy.juego.ropa.Tunica;
+
 public class Juego {
 
     public static void main(String[] args) {
@@ -25,5 +34,6 @@ public class Juego {
         personaje.muestra();
         personaje.ataca();
         personaje.viste();
+        System.out.println("\n");
     }
 }
