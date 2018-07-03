@@ -3,24 +3,14 @@ require_once "Beberage.php";
 
 abstract class Persona {
     protected $edad;
-    protected $puedeBeber = false;
     protected $quienEs = "";
 
     public function beber(Beberage $bebida) {
-        $this->puedeBeber($bebida->getLimiteEdad());
-
-        if ($this->puedeBeber) {
+        if ($this->edad >= $bebida->getLimiteEdad()) {
             echo "Estoy bebiendo ".$bebida->getBebida()."<br>";
         } else {
             echo "No me dejan beber ".$bebida->getBebida()." =( <br>";
         }        
-    }
-
-    public function puedeBeber($limite) {
-        if ($this->edad >= $limite) 
-            $this->puedeBeber = true;
-        else 
-            $this->puedeBeber = false;        
     }
 
     public function getEdad() {
