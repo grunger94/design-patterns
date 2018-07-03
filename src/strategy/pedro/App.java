@@ -11,9 +11,10 @@ import strategy.pedro.persona.Ninio;
 import strategy.pedro.persona.Persona;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class App {
-    static ArrayList<Persona> personas = new ArrayList<>();
+    static List<Persona> personas = new ArrayList<>();
     
     public static void main(String args[]) {
         agregaPersonaYBebida(new Ninio(), new NingunaBebida());
@@ -40,7 +41,7 @@ public class App {
         personas.add(persona);
     }
 
-    static void presentaPersonas(ArrayList<Persona> personas) {
+    static void presentaPersonas(List<Persona> personas) {
         for (Persona persona : personas) {
             presentate(persona);
         }
