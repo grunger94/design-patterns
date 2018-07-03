@@ -5,13 +5,16 @@ abstract class Persona {
     protected $edad;
     protected $quienEs = "";
 
-    public function beber(Beverage $bebida) {
-        
-        if ($this->edad >= $bebida->getLimiteEdad()) {
+    public function beber(Beverage $bebida) {        
+        if ($this->puedeBeber($bebida->getLimiteEdad())) {
             echo "Estoy bebiendo ".$bebida->getBebida()."<br>";
         } else {
             echo "No me dejan beber ".$bebida->getBebida()." =( <br>";
         }        
+    }
+
+    public function puedeBeber($limite) {
+        return $this->edad >= $limite;
     }
 
     public function getEdad() {
