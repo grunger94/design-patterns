@@ -1,7 +1,14 @@
 package strategy.pedro;
 
-import strategy.pedro.persona.*;
-import strategy.pedro.bebida.*;
+import strategy.pedro.bebida.Agua;
+import strategy.pedro.bebida.Bebida;
+import strategy.pedro.bebida.Cerveza;
+import strategy.pedro.bebida.NingunaBebida;
+import strategy.pedro.bebida.Refresco;
+import strategy.pedro.persona.Adolescente;
+import strategy.pedro.persona.Adulto;
+import strategy.pedro.persona.Ninio;
+import strategy.pedro.persona.Persona;
 
 import java.util.ArrayList;
 
@@ -9,9 +16,9 @@ public class App {
     static ArrayList<Persona> personas = new ArrayList<>();
     
     public static void main(String args[]) {
-        agregaPersonaYBebida(new Ninio(), null);
-        agregaPersonaYBebida(new Adolescente(), null);
-        agregaPersonaYBebida(new Adulto(), null);
+        agregaPersonaYBebida(new Ninio(), new NingunaBebida());
+        agregaPersonaYBebida(new Adolescente(), new NingunaBebida());
+        agregaPersonaYBebida(new Adulto(), new NingunaBebida());
 
         agregaPersonaYBebida(new Ninio(), new Agua());
         agregaPersonaYBebida(new Adolescente(), new Refresco());
@@ -29,10 +36,7 @@ public class App {
     }
 
     static void agregaPersonaYBebida(Persona persona, Bebida bebida) {
-        if (bebida != null) {
-            persona.setBebida(bebida);
-        }
-        
+        persona.setBebida(bebida);
         personas.add(persona);
     }
 
