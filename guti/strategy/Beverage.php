@@ -1,5 +1,5 @@
 <?php
-abstract class Beberage {
+abstract class Beverage {
     protected $nombreBebida;
     protected $limiteEdad;
 

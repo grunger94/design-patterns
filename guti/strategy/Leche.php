@@ -1,7 +1,7 @@
 <?php
-require_once "Beberage.php"; 
+require_once "Beverage.php"; 
 
-class Leche extends Beberage {
+class Leche extends Beverage {
     
     public function __construct() {
         $this->limiteEdad = 0;

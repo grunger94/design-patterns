@@ -1,11 +1,12 @@
 <?php
-require_once "Beberage.php"; 
+require_once "Beverage.php"; 
 
 abstract class Persona {
     protected $edad;
     protected $quienEs = "";
 
-    public function beber(Beberage $bebida) {
+    public function beber(Beverage $bebida) {
+        
         if ($this->edad >= $bebida->getLimiteEdad()) {
             echo "Estoy bebiendo ".$bebida->getBebida()."<br>";
         } else {

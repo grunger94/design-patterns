@@ -4,15 +4,16 @@ include('Leche.php');
 include('Puberto.php');
 include('Refresco.php');
 
-$bebe = new Bendicion(2);
-$bibi = new Leche();
+$persona = new Bendicion(2);
+$drink = new Leche();
 
-$morro = new Puberto(12);
-$chesco = new Refresco();
+$persona->getIndetidad();
+$persona->beber($drink);
 
-$bebe->getIndetidad();
-$bebe->beber($chesco);
 
-$morro->getIndetidad();
-$morro->beber($chesco);
+$persona = new Puberto(12);
+$drink = new Refresco();
+
+$persona->getIndetidad();
+$persona->beber($drink);
 ?>
