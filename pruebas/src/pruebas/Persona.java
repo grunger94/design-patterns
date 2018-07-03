@@ -9,19 +9,19 @@ package pruebas;
  *
  * @author Pyckzon
  */
-abstract class persona {
-    etapa etapa;
-    bebida bebida;
+abstract class Persona {
+    Etapa etapa;
+    Bebida bebida;
     
-    void setEtapa(etapa etapa){
+    void setEtapa(Etapa etapa){
         this.etapa= etapa;
     }
     
-    void setBebida(bebida bebida){
+    void setBebida(Bebida bebida){
         this.bebida= bebida;
     }
     
     void muestra(){
-        System.out.println("hola soy un " + etapa.etapa() + " y estoy bebiendo " + bebida.bebida());
+        System.out.println("hola soy un " + etapa.getEtapa() + " y estoy bebiendo " + bebida.getBebida());
     }
 }

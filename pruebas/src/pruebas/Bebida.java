@@ -9,6 +9,6 @@ package pruebas;
  *
  * @author Pyckzon
  */
-public interface bebida {
-    String bebida();
+public interface Bebida {
+    String getBebida();
 }

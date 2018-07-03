@@ -9,9 +9,9 @@ package pruebas;
  *
  * @author Pyckzon
  */
-public class carlos extends persona {
-    public carlos() {
-        etapa = new joven();
-        bebida = new whiskey();
+public class Manuel extends Persona{
+    public Manuel() {
+        etapa = new Bebe();
+        bebida = new Leche();
     }
 }

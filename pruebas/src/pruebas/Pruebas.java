@@ -5,14 +5,7 @@
  */
 package pruebas;
 
-import javax.swing.JOptionPane;
-
 /**
- *  ejemplo de pruebas de cajas
- * el programa debe generar un menu con diferentes funciones o ejemplos
- * 1.- operaciones con variables
- * 2.- operaciones con condiciones
- * 3
  * @author Pyckzon
  */
 public class Pruebas {
@@ -22,13 +15,10 @@ public class Pruebas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("hola soy un adulto y bebo te");
-        
-        
-        persona persona = new carlos();
+        Persona persona = new Carlos();
         persona.muestra();
         
-        persona = new manuel();
+        persona = new Manuel();
         persona.muestra();
     }
     

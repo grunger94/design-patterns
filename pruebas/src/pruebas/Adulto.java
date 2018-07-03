@@ -9,9 +9,9 @@ package pruebas;
  *
  * @author Pyckzon
  */
-public class agua implements bebida{
+public class Adulto implements Etapa{
     @Override
-    public String bebida(){
-        return "agua";
+    public String getEtapa(){
+        return "adulto";
     }
 }

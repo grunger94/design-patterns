@@ -9,9 +9,6 @@ package pruebas;
  *
  * @author Pyckzon
  */
-public class joven implements etapa{
-    @Override
-    public String etapa(){
-        return "joven";
-    }
+public interface Etapa {
+    String getEtapa();
 }

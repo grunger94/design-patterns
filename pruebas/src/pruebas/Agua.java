@@ -9,6 +9,9 @@ package pruebas;
  *
  * @author Pyckzon
  */
-public interface etapa {
-    String etapa();
+public class Agua implements Bebida{
+    @Override
+    public String getBebida(){
+        return "agua";
+    }
 }
