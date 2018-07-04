@@ -20,6 +20,9 @@ public class Pruebas {
         
         persona = new Manuel();
         persona.muestra();
+        
+        persona = new Lalo();
+        persona.muestra();
     }
     
 }

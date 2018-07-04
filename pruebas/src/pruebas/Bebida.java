@@ -11,4 +11,7 @@ package pruebas;
  */
 public interface Bebida {
     String getBebida();
+    void setBebida(String setBebida);
+    boolean getAlcoholica();
+    
 }

@@ -11,7 +11,10 @@ package pruebas;
  */
 public class Carlos extends Persona {
     public Carlos() {
-        etapa = new Joven();
+        etapa = new Adulto();
         bebida = new Whiskey();
+        if ((bebida.getAlcoholica()& !etapa.getMayorDeEdad())) {
+           bebida = new Agua();
+        }
     }
 }

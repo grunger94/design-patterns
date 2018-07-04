@@ -9,13 +9,12 @@ package pruebas;
  *
  * @author Pyckzon
  */
-public class Bebe implements Etapa {
-    @Override
-    public String getEtapa(){
-        return "bebé";
+public class Lalo extends Persona{
+    public Lalo (){
+        etapa = new Joven();
+        bebida = new Whiskey();
+        if ((bebida.getAlcoholica()& !etapa.getMayorDeEdad())) {
+           bebida = new Agua();
+        }
     }
-    @Override
-    public boolean getMayorDeEdad () {
-        return false;
-}
 }

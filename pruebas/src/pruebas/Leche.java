@@ -10,9 +10,18 @@ package pruebas;
  * @author Pyckzon
  */
 public class Leche implements Bebida{
+    String bebida = "Leche";
     @Override
     public String getBebida(){
-        return "Leche";
+        return bebida;
+    }
+    @Override
+    public void setBebida (String setBebida){
+        bebida = setBebida;
+    }
+    @Override
+    public boolean getAlcoholica(){
+        return false;
     }
     
 }

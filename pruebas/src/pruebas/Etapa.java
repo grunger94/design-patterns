@@ -11,4 +11,6 @@ package pruebas;
  */
 public interface Etapa {
     String getEtapa();
+    boolean getMayorDeEdad();
 }
+

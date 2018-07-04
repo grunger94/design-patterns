@@ -14,4 +14,8 @@ public class Adulto implements Etapa{
     public String getEtapa(){
         return "adulto";
     }
+    @Override
+    public boolean getMayorDeEdad(){
+        return true;
+    }
 }

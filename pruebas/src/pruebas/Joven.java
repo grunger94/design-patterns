@@ -14,4 +14,8 @@ public class Joven implements Etapa{
     public String getEtapa(){
         return "joven";
     }
+    @Override
+    public boolean getMayorDeEdad(){
+        return false;
+    }
 }

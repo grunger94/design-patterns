@@ -13,5 +13,8 @@ public class Manuel extends Persona{
     public Manuel() {
         etapa = new Bebe();
         bebida = new Leche();
+        if ((bebida.getAlcoholica()& !etapa.getMayorDeEdad())) {
+           bebida = new Agua();
+        }
     }
 }
