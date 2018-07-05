@@ -1,14 +1,14 @@
 <?php 
 	abstract class Bebida{
 		protected $nombre;
-		protected $paraMenores;
+		protected $edadBase;
 
 		public function getNombre(){
 			return $this->nombre;
 		}
 
-		public function getParaMenores(){
-			return $this->paraMenores;
+		public function getEdadBase(){
+			return $this->edadBase;
 		}
 	}
 ?>

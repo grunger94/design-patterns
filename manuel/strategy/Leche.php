@@ -1,5 +1,8 @@
 <?php 
 	class Leche extends Bebida{
-		public $nombre = 'Leche';
+		public function __construct(){
+			$this->nombre = 'Leche';
+			$this->edadBase = 0;
+		}
 	}
 ?>

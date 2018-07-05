@@ -10,17 +10,25 @@
 	require_once 'Refresco.php';
 	require_once 'Cerveza.php';
 
-	$persona = new Adulto(35, new Refresco());
+	$persona = new Adulto(35);
 	$persona->beber();
-	$persona->setBebida(new Cerveza());
+	echo "<br/>";
+	$persona->setBebida(new Refresco());
 	$persona->beber();
+	echo "<br/>";
 
-	$persona = new Adolescente(13, new Refresco());
+	$persona = new Adolescente(13);
 	$persona->setBebida(new Cerveza());
 	$persona->beber();
+	echo "<br/>";
+	$persona->setBebida(new Leche());
+	$persona->beber();
+	echo "<br/>";
 
-	$persona = new Bebe(1, new Leche());
+	$persona = new Bebe(1);
 	$persona->beber();
+	echo "<br/>";
 	$persona->setBebida(new Cerveza());
 	$persona->beber();
+	echo "<br/>";
 ?>
