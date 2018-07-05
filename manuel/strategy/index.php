@@ -12,23 +12,17 @@
 
 	$persona = new Adulto(35);
 	$persona->beber();
-	echo "<br/>";
 	$persona->setBebida(new Refresco());
 	$persona->beber();
-	echo "<br/>";
 
 	$persona = new Adolescente(13);
 	$persona->setBebida(new Cerveza());
 	$persona->beber();
-	echo "<br/>";
 	$persona->setBebida(new Leche());
 	$persona->beber();
-	echo "<br/>";
 
 	$persona = new Bebe(1);
 	$persona->beber();
-	echo "<br/>";
 	$persona->setBebida(new Cerveza());
 	$persona->beber();
-	echo "<br/>";
 ?>

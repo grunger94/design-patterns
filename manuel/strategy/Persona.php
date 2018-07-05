@@ -11,6 +11,8 @@
                 echo "Hola soy una persona de ".$this->edad." años y estoy 
                     bebiendo ".strtolower($this->bebida->getNombre());
             }
+
+            echo "<br/>";
         }
 
         public function setBebida(Bebida $bebida){
