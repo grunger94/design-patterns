@@ -1,35 +1,43 @@
 package template.pedro;
 
 class App {
+    private static Operacion operacion;
+    private static double primerValor;
+    private static double segundoValor;
+
     public static void main(String[] args) {
-        double primerValor = 5d;
-        double segundoValor = 3d;
+        primerValor = 5d;
+        segundoValor = 3d;
 
-        Operacion operacion = new Suma(3);
-        operacion.ejecuta(primerValor, segundoValor);
-
+        operacion = new Suma(3);
+        calcula();
+        
         operacion = new Resta(null);
-        operacion.ejecuta(primerValor, segundoValor);
+        calcula();
 
         operacion = new Multiplicacion(2);
-        operacion.ejecuta(primerValor, segundoValor);
+        calcula();
 
         operacion = new Division(1);
-        operacion.ejecuta(primerValor, segundoValor);
+        calcula();
 
         primerValor = 5.2d;
         segundoValor = 0d;
 
         operacion = new Suma(0);
-        operacion.ejecuta(primerValor, segundoValor);
+        calcula();
 
         operacion = new Resta(1);
-        operacion.ejecuta(primerValor, segundoValor);
+        calcula();
 
         operacion = new Multiplicacion(2);
-        operacion.ejecuta(primerValor, segundoValor);
+        calcula();
 
         operacion = new Division(null);
+        calcula();
+    }
+
+    private static void calcula() {
         operacion.ejecuta(primerValor, segundoValor);
     }
 }
