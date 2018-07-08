@@ -1,7 +1,10 @@
 package template.pedro;
 
 class Multiplicacion extends Operacion {
-    Multiplicacion(Integer redondeo) {
+    Multiplicacion() {
+    }
+
+    Multiplicacion(int redondeo) {
         this.redondeo = redondeo;
     }
 

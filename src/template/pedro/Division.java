@@ -1,7 +1,10 @@
 package template.pedro;
 
 class Division extends Operacion {
-    Division(Integer redondeo) {
+    Division() {        
+    }
+    
+    Division(int redondeo) {
         this.redondeo = redondeo;
     }
 

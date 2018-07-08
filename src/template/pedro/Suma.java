@@ -1,7 +1,10 @@
 package template.pedro;
 
 class Suma extends Operacion {
-    Suma(Integer redondeo) {
+    Suma() {
+    }
+
+    Suma(int redondeo) {
         this.redondeo = redondeo;
     }
 

@@ -4,7 +4,7 @@ abstract class Operacion {
     protected double primerValor;
     protected double segundoValor;
     protected double resultado;
-    protected Integer redondeo = null;
+    protected int redondeo = -1;
 
     final void ejecuta(double primerValor, double segundoValor) {
         getOperacion();
@@ -24,7 +24,7 @@ abstract class Operacion {
     }
 
     final void muestraResultado() {
-        if (redondeo != null && redondeo >= 0) {
+        if (redondeo >= 0) {
             System.out.println("redondeo a " + redondeo + " decimales");
             System.out.println("resultado: " + String.format("%." + redondeo + "f", resultado));
         } else {

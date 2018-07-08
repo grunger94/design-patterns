@@ -1,7 +1,10 @@
 package template.pedro;
 
 class Resta extends Operacion {
-    Resta(Integer redondeo) {
+    Resta() {
+    }
+
+    Resta(int redondeo) {
         this.redondeo = redondeo;
     }
 

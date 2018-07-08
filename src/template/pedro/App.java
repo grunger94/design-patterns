@@ -12,7 +12,7 @@ class App {
         operacion = new Suma(3);
         calcula();
         
-        operacion = new Resta(null);
+        operacion = new Resta();
         calcula();
 
         operacion = new Multiplicacion(2);
@@ -33,7 +33,7 @@ class App {
         operacion = new Multiplicacion(2);
         calcula();
 
-        operacion = new Division(null);
+        operacion = new Division();
         calcula();
     }
 
