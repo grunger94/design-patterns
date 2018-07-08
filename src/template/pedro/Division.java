@@ -11,6 +11,7 @@ class Division extends Operacion {
 
     void calcula() {
         if (segundoValor == 0) {
+            System.out.println("división por cero");
             return;
         }
 
