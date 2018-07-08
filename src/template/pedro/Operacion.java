@@ -10,11 +10,6 @@ abstract class Operacion {
         getOperacion();
         setValores(primerValor, segundoValor);
         calcula();
-
-        /*if (redondeo != null && redondeo >= 0) {
-            redondea();
-        }*/
-
         muestraResultado();
     }
 
@@ -38,10 +33,5 @@ abstract class Operacion {
         }
 
         System.out.println("\n");
-    }
-
-    final void redondea() {
-        double factor = Math.pow(10, redondeo);
-        resultado = (double) Math.round(resultado * factor) / factor;
     }
 }
