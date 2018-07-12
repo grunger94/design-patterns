@@ -24,4 +24,8 @@
     interchangeable. Strategy lets the algorithms vary independently from them
     clients that use them
     
+  _**Template Method**_ - Defines the skeleton of an algorithm in an operation, deferring some steps
+    to subclasses. Template method lets subclasses redefine certain steps of an algorithm 
+    without changing the algorithm structure
+    
   
