@@ -17,6 +17,8 @@
   
   Program to an interface, not implementations
   
+  Don’t call us, we’ll call you
+  
 
 **OO Patterns**
 
