@@ -2,21 +2,16 @@
     require_once "Operacion.php";
     
     class Division extends Operacion{
-        public $enFraccion = true;
+        public $enFraccion;
 
         public function calcula()
         {
             if (!$this->enFraccion){
-                $valor1 = $this->valor1;
-                $valor2 = $this->valor2;
-                $this->resultado = $valor1 / $valor2;
-            }else{
-                $valor1 = $this->valor1;
-                $valor2 = $this->valor2;
-                
-                $entero = floor($valor1 / $valor2);
-                $numerador = $valor1 % $valor2;
-                $denominador = $valor2;
+                $this->resultado = $this->valor1 / $this->valor2;
+            }else{                
+                $entero = floor($this->valor1 / $this->valor2);
+                $numerador = ($this->valor1 % $this->valor2);
+                $denominador = $this->valor2;
                 
                 if ($entero != 0)
                     $this->resultado = "<b>$entero</b> $numerador/$denominador";
@@ -32,7 +27,7 @@
 
         protected function enFraccion()
         {
-            return $enFraccion;
+            return true;
         }
     }
 ?>
