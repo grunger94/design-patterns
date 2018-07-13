@@ -13,7 +13,7 @@
 	$operacion = new Multiplicacion();
 	$operacion->ejecuta(10,3);
 
-	$operacion = new Division();
+	$operacion = new Division(true);
 	$operacion->ejecuta(20,3);
 
 	$operacion->enFraccion = false;

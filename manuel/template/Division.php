@@ -4,6 +4,10 @@
     class Division extends Operacion{
         public $enFraccion;
 
+        public function __construct($enFraccion){
+            $this->enFraccion = $enFraccion;
+        }
+
         public function calcula()
         {
             if (!$this->enFraccion){
@@ -27,7 +31,7 @@
 
         protected function enFraccion()
         {
-            return true;
+            return $enFraccion;
         }
     }
 ?>
