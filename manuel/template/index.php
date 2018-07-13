@@ -16,6 +16,6 @@
 	$operacion = new Division(true);
 	$operacion->ejecuta(20,3);
 
-	$operacion->enFraccion = false;
+	$operacion->setEnFraccion(false);
 	$operacion->ejecuta(20,3);
 ?>

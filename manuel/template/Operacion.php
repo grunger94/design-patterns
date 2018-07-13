@@ -4,7 +4,8 @@
         protected $valor1;
         protected $valor2;
         protected $resultado;
-
+        protected $enFraccion;
+        
         final function ejecuta($valor1, $valor2)
         {
             $this->getOperacion();
@@ -14,18 +15,18 @@
             echo "<br/>";
         }
 
-        protected function setValores($valor1, $valor2)
+        private function setValores($valor1, $valor2)
         {
             $this->valor1 = $valor1;
             $this->valor2 = $valor2;
         }
         
-        protected function muestraResultado()
+        private function muestraResultado()
         {
             echo "El resultado es: $this->resultado <br>";
         }
         
-        protected function enFraccion()
+        private function enFraccion()
         {
             return false;
         }

@@ -2,8 +2,6 @@
     require_once "Operacion.php";
     
     class Division extends Operacion{
-        public $enFraccion;
-
         public function __construct($enFraccion){
             $this->enFraccion = $enFraccion;
         }
@@ -22,6 +20,10 @@
                 else
                     $this->resultado = "$numerador/$denominador";
             }
+        }
+
+        public function setEnFraccion(Bool $enFraccion){
+            $this->enFraccion = $enFraccion;
         }
 
         public function getOperacion()
