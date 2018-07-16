@@ -5,7 +5,7 @@
         protected $valor2;
         protected $resultado;
         protected $enFraccion;
-        
+
         final function ejecuta($valor1, $valor2)
         {
             $this->getOperacion();
@@ -20,13 +20,13 @@
             $this->valor1 = $valor1;
             $this->valor2 = $valor2;
         }
-        
+
         private function muestraResultado()
         {
             echo "El resultado es: $this->resultado <br>";
         }
-        
-        private function enFraccion()
+
+        protected function enFraccion()
         {
             return false;
         }
