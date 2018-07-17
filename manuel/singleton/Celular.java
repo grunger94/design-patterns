@@ -1,29 +1,29 @@
 class Celular
 {
-	protected Celular instanciaUnica;
-	protected String numero;
+	private String numero;
+	private static Celular instanciaUnica;
 
-	public Celular(String numero)
+	private Celular(String numero)
 	{
 		this.numero = numero;
 	}
 
-	public Celular getInstancia()
+	public static Celular getInstancia(String numero)
 	{
 		if (instanciaUnica == null) {
-			this.instanciaUnica = new Celular(this.numero);
+			instanciaUnica = new Celular(numero);
 		}
 		
-		return this.instanciaUnica;
+		return instanciaUnica;
 	}
 
 	public String getNumero()
 	{
-		return this.numero;
+		return numero;
 	}
 
 	public void setNumero(String numero)
 	{
-		this.numero = numero;
+		numero = numero;
 	}
 }

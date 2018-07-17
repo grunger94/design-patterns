@@ -11,6 +11,6 @@ class Dispositivo
 
 	public void mostrarInfo()
 	{
-		System.out.println("El dispositivo " + this.nombre + " tiene el numero celular " + this.celular.getNumero());
+		System.out.println("El dispositivo " + nombre + " tiene el numero celular " + celular.getNumero());
 	}
 }
