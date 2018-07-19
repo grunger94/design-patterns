@@ -1,7 +1,7 @@
 <?php
 require_once "Operation.php";
 
-class Multiply extends Operation {
+class Multiplication extends Operation {
     public function __construct($round = false) {
         $this->operation = "<b>MULTIPLICACIÓN</b>";
         $this->round = $round;
