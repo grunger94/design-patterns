@@ -1,7 +1,7 @@
 <?php
 require_once "Operation.php";
 
-class Substract extends Operation {
+class Substraction extends Operation {
     public function __construct($round=false) {
         $this->operation = "<b>RESTA</b>";
         $this->round = $round;
