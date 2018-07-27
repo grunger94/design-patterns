@@ -1,3 +1,4 @@
+
 package factory.simplefactory;
 
 class Pizzeria {
