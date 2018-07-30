@@ -5,29 +5,30 @@ import factory.method.pedro.animalfactory.AnimalTerrestreFactory;
 
 public class App {
     public static void main(String[] args) {
-        String tipoAnimal = args[0];
-        String origen = args[1];
+        try {
+            String tipoAnimal = args[0];
+            String origen = args[1];
 
+            AnimalFactory animalFactory = crear(origen);
+            Animal animal = animalFactory.crear(tipoAnimal);
+
+            animal.mostrarAtributos();
+        } catch (IllegalArgumentException exception) {
+            System.out.println(exception.getMessage());
+        }
+    }
+
+    private static AnimalFactory crear(String origen) throws IllegalArgumentException {
         AnimalFactory animalFactory = null;
 
         if (origen.equals("terrestre")) {
             animalFactory = new AnimalTerrestreFactory();
         } else if (origen.equals("extraterrestre")) {
             animalFactory = new AnimalExtraterrestreFactory();
+        } else {
+            throw new IllegalArgumentException("origen de animal no válido");
         }
 
-        if (animalFactory == null) {
-            System.out.println("origen no válido");
-            return;
-        }
-
-        Animal animal = animalFactory.crear(tipoAnimal);
-
-        if (animal == null) {
-            System.out.println("tipo de animal no válido");
-            return;
-        }
-
-        animal.mostrarAtributos();
+        return animalFactory;
     }
 }
