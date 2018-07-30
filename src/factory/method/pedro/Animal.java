@@ -5,6 +5,14 @@ public abstract class Animal {
     protected int patas;
     protected int ojos;
 
+    public final void mostrarAtributos() {
+        mostrarTipo();
+        mostrarOjos();
+        mostrarPatas();
+        mostrarAntenas();
+        System.out.println("\n");
+    }
+
     public void mostrarTipo() {
         System.out.println("soy un " + tipo);
     }

@@ -28,10 +28,6 @@ public class App {
             return;
         }
 
-        animal.mostrarTipo();
-        animal.mostrarOjos();
-        animal.mostrarPatas();
-        animal.mostrarAntenas();
-        System.out.println("\n");
+        animal.mostrarAtributos();
     }
 }
