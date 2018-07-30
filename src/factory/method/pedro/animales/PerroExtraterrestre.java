@@ -10,7 +10,7 @@ public class PerroExtraterrestre extends Animal {
     }
 
     @Override
-    public void mostrarAntenas() {
+    protected void mostrarAntenas() {
         System.out.println("si tengo antenas");
     }
 }

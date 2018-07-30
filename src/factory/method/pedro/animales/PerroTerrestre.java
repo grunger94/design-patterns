@@ -8,9 +8,4 @@ public class PerroTerrestre extends Animal {
         patas = 4;
         ojos = 2;
     }
-
-    @Override
-    public void mostrarAntenas() {
-        System.out.println("no tengo antenas");
-    }
 }

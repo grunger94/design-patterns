@@ -13,17 +13,19 @@ public abstract class Animal {
         System.out.println("\n");
     }
 
-    public void mostrarTipo() {
+    private void mostrarTipo() {
         System.out.println("soy un " + tipo);
     }
 
-    public void mostrarOjos() {
+    private void mostrarOjos() {
         System.out.println("tengo " + ojos + " ojos");
     }
 
-    public void mostrarPatas() {
+    private void mostrarPatas() {
         System.out.println("tengo " + patas + " patas");
     }
 
-    public abstract void mostrarAntenas();
+    protected void mostrarAntenas() {
+        System.out.println("no tengo antenas");
+    }
 }
